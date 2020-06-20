@@ -1,0 +1,222 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: orange;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header div {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header div input {
+    text-align: center;
+    display: block;
+    height: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+header div button {
+    border-left: 2px;
+    width: 60px;
+    height: 34px;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid rgb(115, 214, 115);
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(115, 214, 115);
+    box-shadow: 1px 1px 3px #000;
+}
+
+header div button:hover {
+    background-color: rgb(80, 167, 80);
+    border: 1px solid rgb(80, 167, 80);
+    transition: 400ms;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal.off {
+    display: none;
+}
+
+#modal #pokemon {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+#modal #pokemon #cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal #pokemon #cont h1 {
+    margin-top: 15px;
+}
+
+#modal #pokemon #cont h3 {
+    margin-top: 15px;
+    color: #ced4da;
+    font-weight: 200;
+}
+
+#modal #pokemon img {
+    width: 150px;
+    height: 150px;
+}
+
+#modal #pokemon #tipo,
+#modal #pokemon #ability {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.grass,
+.ability,
+.normal,
+.bug,
+.fighting,
+.ghost,
+.electric,
+.flying,
+.steel,
+.psychic,
+.poison,
+.fire,
+.ice,
+.ground,
+.water,
+.dragon,
+.rock,
+.dark,
+.fairy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: chartreuse;
+    color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.ability {
+    background-color: orangered;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.normal {
+    background-color: rgb(187, 180, 142);
+}
+
+.bug {
+    background-color: rgb(143, 173, 7);
+}
+
+.fighting {
+    background-color: rgb(243, 65, 42);
+}
+
+.ghost {
+    background-color: rgb(195, 0, 255);
+}
+
+.electric {
+    background-color: rgb(251, 255, 0);
+}
+
+.flying {
+    background-color: rgb(187, 95, 248);
+}
+
+.steel {
+    background-color: rgb(154, 158, 149);
+}
+
+.psychic {
+    background-color: rgb(247, 0, 255);
+}
+
+.poison {
+    background-color: rgb(143, 9, 148);
+}
+
+.fire {
+    background-color: rgb(255, 145, 0);
+}
+
+.ice {
+    background-color: rgb(92, 182, 182);
+}
+
+.ground {
+    background-color: rgb(212, 206, 119);
+}
+
+.water {
+    background-color: rgb(13, 132, 230);
+}
+
+.dragon {
+    background-color: rgb(63, 5, 172);
+}
+
+.rock {
+    background-color: rgb(128, 146, 46);
+}
+
+.dark {
+    background-color: rgb(62, 66, 53);
+}
+
+.fairy {
+    background-color: rgb(175, 17, 196);
+}
