@@ -10,6 +10,31 @@ h1 {
 h4 {
     font-size: 15px;
 }
+.seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    width: 30px;
+    height: 65px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 4px;
+}
+.seta:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+.esquerda{
+    position: fixed;
+    left: 10%;
+}
+.direita{
+    position: fixed;
+    right: 10%;
+}
 
 header {
     display: flex;
@@ -84,7 +109,6 @@ header div button:hover {
     width: 40%;
     height: 100%;
 }
-
 #modal #pokemon #cont {
     display: flex;
     flex-direction: column;
@@ -115,6 +139,19 @@ header div button:hover {
     justify-content: space-between;
     border-radius: 15px;
 }
+#sair{
+    margin-top: 15px;
+}
+#sair a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(13, 70, 155);
+}
+#sair a:hover{
+    text-decoration: underline;
+    color: rgb(9, 50, 112);
+    transition: 400ms;
+}
 
 .grass,
 .ability,
@@ -138,12 +175,17 @@ header div button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
     background-color: chartreuse;
     color: white;
     width: 60px;
     height: 20px;
     border-radius: 8px;
+}
+#pokemon #cont #tipo span + span{
+    margin-left: 15px;
+}
+#pokemon #cont #ability span + span{
+    margin-left: 15px;
 }
 
 .ability {
