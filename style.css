@@ -10,11 +10,12 @@ h1 {
 h4 {
     font-size: 15px;
 }
-.seta{
+
+.seta {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 30px;
     height: 65px;
     font-size: 30px;
@@ -24,14 +25,17 @@ h4 {
     transition: 400ms;
     border-radius: 4px;
 }
-.seta:hover{
-    background-color: rgba(0,0,0,0.7);
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.esquerda{
+
+.esquerda {
     position: fixed;
     left: 10%;
 }
-.direita{
+
+.direita {
     position: fixed;
     right: 10%;
 }
@@ -39,10 +43,11 @@ h4 {
 header {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: auto;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px
 }
 
 header div {
@@ -55,7 +60,7 @@ header div {
 header div input {
     text-align: center;
     display: block;
-    height: 30px;
+    height: 34px;
     border: 1px solid #ced4da;
     border-radius: 8px 0 0 8px;
     outline: none;
@@ -67,7 +72,7 @@ header div input {
 header div button {
     border-left: 2px;
     width: 60px;
-    height: 34px;
+    height: 38px;
     border-radius: 0 8px 8px 0;
     border: 1px solid rgb(115, 214, 115);
     outline: none;
@@ -109,6 +114,7 @@ header div button:hover {
     width: 40%;
     height: 100%;
 }
+
 #modal #pokemon #cont {
     display: flex;
     flex-direction: column;
@@ -131,47 +137,31 @@ header div button:hover {
     height: 150px;
 }
 
-#modal #pokemon #tipo,
-#modal #pokemon #ability {
+#modal #pokemon #tipo, #modal #pokemon #ability {
     display: flex;
     flex-direction: row;
     flex: 1;
     justify-content: space-between;
     border-radius: 15px;
 }
-#sair{
+
+#sair {
     margin-top: 15px;
 }
-#sair a{
+
+#sair a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(13, 70, 155);
 }
-#sair a:hover{
+
+#sair a:hover {
     text-decoration: underline;
     color: rgb(9, 50, 112);
     transition: 400ms;
 }
 
-.grass,
-.ability,
-.normal,
-.bug,
-.fighting,
-.ghost,
-.electric,
-.flying,
-.steel,
-.psychic,
-.poison,
-.fire,
-.ice,
-.ground,
-.water,
-.dragon,
-.rock,
-.dark,
-.fairy {
+.grass, .ability, .normal, .bug, .fighting, .ghost, .electric, .flying, .steel, .psychic, .poison, .fire, .ice, .ground, .water, .dragon, .rock, .dark, .fairy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,10 +171,12 @@ header div button:hover {
     height: 20px;
     border-radius: 8px;
 }
-#pokemon #cont #tipo span + span{
+
+#pokemon #cont #tipo span+span {
     margin-left: 15px;
 }
-#pokemon #cont #ability span + span{
+
+#pokemon #cont #ability span+span {
     margin-left: 15px;
 }
 
@@ -261,4 +253,59 @@ header div button:hover {
 
 .fairy {
     background-color: rgb(175, 17, 196);
+}
+#elementos{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+#elementos .elemento{
+    width: 150px;
+    height: 150px;
+    border-radius: 164px;
+    background-color: white;
+    justify-self: center;
+    cursor: pointer;
+    display: none;
+    box-shadow: 1px 2px 1px #000;
+}
+#elementos .elemento img{
+    width: 150px;
+    height: 150px;
+}
+#elementos .esquerda{
+    margin-left: 25%;
+}
+#elementos .direita{
+    margin-right: 25%;
+}
+#reg{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+#regioes{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    padding-bottom: 5px;
+}
+#regioes a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(77, 77, 196);
+    transition: 400ms;
+}
+#regioes a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
 }
