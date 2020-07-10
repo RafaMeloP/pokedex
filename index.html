@@ -13,7 +13,7 @@
         <header>
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Logo pokemon">
             <div>
-                <input type="text" placeholder="Pesquise o Pokemon pelo nome ou id" size="50">
+                <input type="text" placeholder="Pesquise o Pokemon pelo nome ou id">
                 <button><img src="img/search.svg" alt=""></button>
             </div>
         </header>
@@ -21,27 +21,27 @@
             <h3>Regiões</h3>
         </div>
         <div id="regioes">
-            <a href="#" onclick="regiao('2')">Kanto</a>
-            <a href="#" onclick="regiao('7')">Johto</a>
-            <a href="#" onclick="regiao('15')">Hoenn</a>
-            <a href="#" onclick="regiao('6')">Sinnoh</a>
-            <a href="#" onclick="regiao('9')">Unova</a>
-            <a href="#" onclick="regiao('12')">Kalos Central</a>
-            <a href="#" onclick="regiao('13')">Kalos Coastal</a>
-            <a href="#" onclick="regiao('14')">Kalos Mountain</a>
-            <a href="#" onclick="regiao('17')">Melemele</a>
-            <a href="#" onclick="regiao('18')">Akala</a>
-            <a href="#" onclick="regiao('19')">Ulaula</a>
-            <a href="#" onclick="regiao('20')">Poni</a>
-            <a href="#" onclick="regiao('21')">Alola</a>
+            <div>
+                <select name="reg">
+                    <option>Kanto</option>
+                    <option>Johto</option>
+                    <option>Hoenn</option>
+                    <option>Sinnoh</option>
+                    <option>Unova</option>
+                    <option>Kalos Central</option>
+                    <option>Kalos Coastal</option>
+                    <option>Kalos Mountain</option>
+                    <option>Melemele</option>
+                    <option>Akala</option>
+                    <option>Ulaula</option>
+                    <option>Poni</option>
+                    <option>Alola</option>
+                </select>
+            </div>
         </div>
 
         <div id="elementos">
-            <div class="seta esquerda"><</div>
-            <div id="cont">
-                
-            </div>
-            <div class="seta direita">></div>
+            <div class="seta esquerda"><</div> <div id="cont"> </div> <div class="seta direita">></div>
         </div>
 
         <div id="modal" class="off"></div>
